@@ -116,16 +116,16 @@ const gameObject = function(){
      }
      return objectBall;
    }
-   /*function homeTeamName(){
+   function homeTeamName(){
     return gameObject()['home']['teamName']
   }
   
-  console.log(homeTeamName())*/
-  /*function numPointsScored(){
+  console.log(homeTeamName())
+  function numPointsScored(){
     return gameObject()['home']['players']["Alan Anderson"].Points
   }
   
-  console.log(numPointsScored())*/
+  console.log(numPointsScored())
   function shoeSize(){
     return gameObject()['home']['players']["Alan Anderson"].Shoe
   }
@@ -133,6 +133,7 @@ const gameObject = function(){
   console.log(shoeSize())
 
   function teamColors(){
+
     return gameObject()['home']['colors']
   }
   console.log(teamColors())
@@ -151,6 +152,31 @@ const gameObject = function(){
     return gameObject()['home']['players']
   }
   console.log(playerStats())
+
+  function bigShoeRebounds(){
+    return gameObject()['away']['players'].Rebounds
+}
+console.log(bigShoeRebounds())
+
+function mostPointsScored(){
+    return gameObject()['points']
+}
+console.log(mostPointsScored())
+
+function winningTeam(){
+    return gameObject()['home']
+}
+console.log(winningTeam())
+
+function playerWithLongestName(){
+    return gameObject()['player']
+}
+console.log(playerWithLongestName())
+
+  function doesLongNameStealATon(){
+      return gameObject()['away']['players'].Steals
+  }
+  console.log(doesLongNameStealATon())
    
   //console.log(gameObject());
 
